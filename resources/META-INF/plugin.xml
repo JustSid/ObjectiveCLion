@@ -1,0 +1,30 @@
+<idea-plugin version="2">
+    <id>com.widerwille.ObjectiveCL</id>
+    <name>ObjectiveCLion</name>
+    <version>1.0</version>
+    <vendor email="justsid@widerwille.com" url="http://widerwille.com">Sidney Just</vendor>
+
+    <description><![CDATA[
+      Plugin that forces CLion to treat C and C++ files as Objective-C and Objective-C++ files respectively. More a hack
+      and proof of concept than anything really.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Initial release
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="141.0"/>
+    <depends>com.intellij.modules.clion</depends>
+
+    <application-components>
+        <component>
+            <implementation-class>com.widerwille.ObjectiveCL.OCLApplicationComponent</implementation-class>
+        </component>
+    </application-components>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <colorSettingsPage implementation="com.widerwille.ObjectiveCL.OCLColorSettingsPage"/>
+    </extensions>
+
+</idea-plugin>
