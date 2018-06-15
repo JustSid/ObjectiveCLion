@@ -28,7 +28,7 @@ public class OCLColorSettingsPage implements ColorSettingsPage, DisplayPriorityS
 	@NotNull
 	public String getDisplayName()
 	{
-		return "Objective-C/++";
+		return "Objective-C/C++";
 	}
 
 	public Icon getIcon()
